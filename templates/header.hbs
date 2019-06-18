@@ -1,20 +1,20 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
 <header class="header">
-  <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-      {{#if settings.show_brand_name}}
-        <span aria-hidden="true">{{help_center.name}}</span>
-      {{/if}}
-    {{/link}}
-  </div>
+  <div class="header-left">
+      <div class="logo">
+        {{#link 'help_center'}}
+          <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+        {{/link}}
+      </div>
+      <strong class="support-center">SUPPORT CENTER</strong>
+   </div>
 
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
       <ul class="user-nav-list">
         <li>{{link 'community'}}</li>
-        <li>{{#link 'new_request' class='submit-a-request'}}Contact US{{/link}}</li>
+        <li>{{#link 'new_request' class='submit-a-request'}}Contact Us{{/link}}</li>
         {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in"}}
@@ -83,7 +83,7 @@
           <li class="nav-divider"></li>
         {{/if}}
         <li class="item">{{link 'community' role="menuitem"}}</li>
-        <li class="item">{{#link 'new_request' role="menuitem" class='submit-a-request'}}Contact US{{/link}}</li>
+        <li class="item">{{#link 'new_request' role="menuitem" class='submit-a-request'}}Contact Us{{/link}}</li>
         <li class="nav-divider"></li>
         {{#if signed_in}}
           <li class="item">
