@@ -190,7 +190,7 @@ body {
   background-color: #fff;
   color: $text_color;
   font-family: $text_font;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -211,7 +211,7 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 35px;
 }
 
 h2 {
@@ -219,7 +219,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -478,7 +478,7 @@ ul {
 .table th,
 .table th a {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
   text-align: left;
 }
 [dir=rtl] .table th,
@@ -526,7 +526,7 @@ ul {
 
 .form-field label {
   display: block;
-  font-size: 13px;
+  font-size: 18px;
   margin-bottom: 5px;
 }
 
@@ -611,7 +611,7 @@ ul {
 }
 
 .form .suggestion-list {
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 30px;
 }
 .form .suggestion-list label {
@@ -1201,7 +1201,7 @@ ul {
 }
 .breadcrumbs li {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
   max-width: 450px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1481,7 +1481,7 @@ ul {
   }
 }
 .sub-nav input[type=search]::after {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /***** Blocks *****/
@@ -1730,7 +1730,7 @@ ul {
 }
 .recent-activity-item-time, .recent-activity-item-comment {
   display: inline-block;
-  font-size: 13px;
+  font-size: 18px;
 }
 .recent-activity-item-comment {
   padding-left: 5px;
@@ -1838,6 +1838,9 @@ ul {
 }
 .article-list-item a {
   color: $text_color;
+}
+.article-list li.article-list-item {
+  font-size: 18px;
 }
 
 .icon-star {
@@ -2146,7 +2149,7 @@ ul {
   text-align: center;
 }
 .article-votes-question {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -2198,7 +2201,7 @@ ul {
 }
 
 .sidenav-title {
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
   font-weight: 600;
 }
@@ -2296,7 +2299,7 @@ ul {
 .comment-callout {
   color: lighten($text_color, 20%);
   display: inline-block;
-  font-size: 13px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 .comment-callout a {
@@ -2315,7 +2318,7 @@ ul {
 }
 .comment-sorter .dropdown-toggle {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
 }
 [dir=rtl] .comment-sorter {
   float: left;
@@ -2671,7 +2674,7 @@ ul {
 /* Community topic page */
 .topic-header {
   border-bottom: 1px solid #ddd;
-  font-size: 13px;
+  font-size: 18px;
 }
 @media (min-width: 768px) {
   .topic-header {
@@ -2799,7 +2802,7 @@ ul {
 }
 .striped-list-count {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
   justify-content: flex-start;
   text-transform: capitalize;
 }
@@ -3514,7 +3517,7 @@ ul {
   }
 }
 .requests-table-toolbar .request-filter-label {
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 30px;
 }
 @media (min-width: 768px) {
@@ -3625,7 +3628,7 @@ ul {
 /* Contributions table */
 .contributions-table td:last-child {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
 }
 @media (min-width: 768px) {
   .contributions-table td:last-child {
@@ -3745,14 +3748,14 @@ ul {
   .request-sidebar {
     background-color: darken(#fff, 3%);
     border: 0;
-    font-size: 13px;
+    font-size: 18px;
     flex: 0 0 auto;
     padding: 0 20px;
     width: 30%;
   }
 }
 .request-sidebar h2 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   position: relative;
 }
@@ -3773,7 +3776,7 @@ ul {
 .request-details dt, .request-details dd {
   display: inline-block;
   vertical-align: top;
-  font-size: 13px;
+  font-size: 18px;
   margin: 20px 0 0 0;
 }
 .request-details dd {
@@ -3872,7 +3875,7 @@ ul {
 
 .meta-data {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
 }
 .meta-data:not(:last-child)::after {
   content: "·";
@@ -3987,7 +3990,7 @@ ul {
 }
 
 .profile-stats {
-  font-size: 13px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -4150,7 +4153,7 @@ ul {
   flex-basis: 100%;
   padding: 10px 0;
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4165,7 +4168,7 @@ ul {
 .profile-section-sorter {
   flex-basis: 100%;
   border-top: solid 1px #eee;
-  font-size: 13px;
+  font-size: 18px;
 }
 .profile-section-sorter .dropdown-toggle {
   padding: 10px 0;
@@ -4225,7 +4228,7 @@ ul {
   margin-right: 0;
 }
 .profile-badges-item-title, .profile-badges-item-metadata-title {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .profile-badges-item-title {
@@ -4233,7 +4236,7 @@ ul {
 }
 .profile-badges-item-description, .profile-badges-item-metadata-description {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
   margin: 0;
 }
 .profile-badges-item-metadata {
@@ -4635,7 +4638,7 @@ ul {
 }
 .search-result-votes, .search-result-meta-count {
   color: lighten($text_color, 20%);
-  font-size: 13px;
+  font-size: 18px;
 }
 .search-result-votes-icon, .search-result-meta-count-icon {
   color: $brand_color;
