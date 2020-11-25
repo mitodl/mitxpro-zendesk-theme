@@ -191,6 +191,7 @@ body {
   color: $text_color;
   font-family: $text_font;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -1829,6 +1830,13 @@ ul {
   display: block;
   padding: 15px 0;
 }
+.section-tree .see-all-articles a {
+  text-decoration: underline;
+  color: $article_link_color;
+}
+.section-tree .see-all-articles a:visited {
+  color: $visited_article_link_color;
+}
 
 .article-list-item {
   font-size: 16px;
@@ -2216,6 +2224,15 @@ ul {
 .recent-articles li,
 .related-articles li {
   margin-bottom: 15px;
+}
+.recent-articles a,
+.related-articles a {
+  text-decoration: underline;
+  color: $article_link_color;
+}
+.recent-articles a:visited,
+.related-articles a:visited {
+  color: $visited_article_link_color;
 }
 
 /***** Attachments *****/
@@ -3876,6 +3893,7 @@ ul {
 .meta-data {
   color: lighten($text_color, 20%);
   font-size: 18px;
+  font-weight: 400;
 }
 .meta-data:not(:last-child)::after {
   content: "·";
