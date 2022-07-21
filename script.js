@@ -168,10 +168,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $( document ).ready(function() {
-  $('a.submit-a-request').each(function () {
-    if (location.pathname.indexOf('/requests/new') > -1) {
+
+  if (location.pathname.endsWith('/requests/new')) {
+
+    // Hiding all 'submit-request' links from the 'new requests' page.
+    $('a.submit-a-request').each(function () {
       $(this).hide();
-      $('.contact-block').hide();
-    }
-  });
+    });
+
+    // hiding main contact block in footer.
+    $('.contact-block').hide();
+
+    // Open the search results in new tab on the 'new request' page.
+    $("form.search").submit(function () {
+        $("form.search").attr('target', '_blank');
+    });
+  }
 });
