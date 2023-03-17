@@ -59,7 +59,6 @@ textarea {
 }
 
 input {
-  font-weight: 300;
   max-width: 100%;
   box-sizing: border-box;
   outline: none;
@@ -264,8 +263,7 @@ ul {
   text-align: left;
 }
 
-[dir="rtl"] .table th, [dir="rtl"]
-.table th a {
+[dir="rtl"] .table th, [dir="rtl"] .table th a {
   text-align: right;
 }
 
@@ -942,7 +940,7 @@ ul {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #999;
+  color: #797676;
   height: 65px;
   font-size: 24px;
   padding-left: 20px;
@@ -1696,13 +1694,8 @@ ul {
   list-style-type: disc;
 }
 
-.article-body a {
-  text-decoration: underline;
-  color: $article_link_color;
-}
-
 .article-body a:visited {
-  color: $visited_article_link_color;
+  color: darken($link_color, 20%);
 }
 
 .article-body code {
@@ -3140,7 +3133,7 @@ ul {
 
 @media (min-width: 1024px) {
   .my-activities-table th:first-child,
-  .my-activities-table td:first-child {
+.my-activities-table td:first-child {
     width: 500px;
   }
 }
@@ -3239,11 +3232,10 @@ ul {
 
 @media (min-width: 768px) {
   .requests-table-toolbar .organization-subscribe,
-  .requests-table-toolbar .organization-unsubscribe {
+.requests-table-toolbar .organization-unsubscribe {
     margin-left: 10px;
   }
-  [dir="rtl"] .requests-table-toolbar .organization-subscribe, [dir="rtl"]
-  .requests-table-toolbar .organization-unsubscribe {
+  [dir="rtl"] .requests-table-toolbar .organization-subscribe, [dir="rtl"] .requests-table-toolbar .organization-unsubscribe {
     margin: 0 10px 0 0;
   }
 }
@@ -3681,6 +3673,8 @@ ul {
 [class^="icon-"]::before,
 [class*=" icon-"]::before,
 .icon,
+.search-result-votes::before,
+.search-result-meta-count::before,
 .search::before,
 .recent-activity-item-comment span::before,
 .article-vote::before,
@@ -3690,9 +3684,7 @@ ul {
 .vote-down::before,
 .actions .dropdown-toggle::before,
 .collapsible-nav-list li[aria-selected="true"]::after,
-.collapsible-sidebar-title::after,
-.search-result-votes::before,
-.search-result-meta-count::before {
+.collapsible-sidebar-title::after {
   font-family: "copenhagen-icons";
   font-style: normal;
   font-weight: normal;
