@@ -1202,6 +1202,7 @@ ul {
 }
 .breadcrumbs li {
   color: lighten($text_color, 20%);
+  font-weight: 400;
   font-size: 18px;
   max-width: 450px;
   overflow: hidden;
@@ -1245,7 +1246,7 @@ ul {
   appearance: none;
   -webkit-appearance: none;
   box-sizing: border-box;
-  color: #666;
+  color: #797676;
   flex: 1 1 auto;
   height: 65px;
   font-size: 24px;
@@ -2215,6 +2216,7 @@ ul {
 }
 .sidenav-item {
   display: block;
+  font-weight: 400;
   margin-top: 10px;
   margin-bottom: 16px;
   overflow: hidden;
@@ -4585,7 +4587,7 @@ ul {
   display: none;
 }
 .search-results-sidebar .multibrand-filter-list .doc-count {
-  color: #666;
+  color: #797676;
 }
 .search-results-sidebar .see-all-filters {
   background: none;
