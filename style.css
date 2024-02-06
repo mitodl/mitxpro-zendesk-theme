@@ -454,7 +454,7 @@ ul {
   color: $site_theme_color;
   font-weight: 600;
   font-size: 14px;
-  padding: 9px 0 0;
+  padding: 5px 0 0;
   line-height: 18px;
   display: inline-block;
 }
@@ -462,7 +462,6 @@ ul {
 @media (min-width: 768px) {
   .support-center {
     font-size: 24px;
-    padding: 12px 0 0;
     line-height: 32px;
   }
 }
@@ -473,37 +472,24 @@ ul {
   margin: 0 10px 0 0;
 }
 
-.logo .mit-link, .logo .xpro-link {
-  position: absolute;
-  z-index: 2;
-  opacity: .5;
-}
-
-.logo .mit-link {
-  left: 0;
-  top: 7px;
-  width: 72px;
-  height: 39px;
-}
-
 .logo .xpro-link {
-  left: 100px;
-  top: 15px;
-  width: 69px;
-  height: 25px;
+  z-index: 2;
+  width: 125px;
+  height: 35px;
 }
 
 @media (min-width: 768px) {
   .logo {
-    width: 170px;
+    width: 125px;
+    height: 35px;
     margin: 0 20px 0 0;
   }
 }
 
 .logo img {
-  width: 100%;
+  width: 125px;
+  height: 35px;
   display: block;
-  height: auto;
 }
 
 .user-nav {
@@ -738,7 +724,8 @@ ul {
 }
 
 .footer .company-info img {
-  width: 78px;
+  width: 129px;
+  height: 33px;
   margin: 0 auto 15px;
 }
 
