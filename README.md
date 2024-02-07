@@ -49,7 +49,7 @@ After you have customized your theme you can download the repository as a `zip` 
 
 You can follow the documentation for importing [here](https://support.zendesk.com/hc/en-us/articles/115012794168).
 
-You can also import directly from GitHub - learn more [here](https://support.zendesk.com/hc/en-us/community/posts/360004400007).
+You can also import directly from GitHub - learn more [here](https://support.zendesk.com/hc/en-us/articles/4408832476698).
 
 ## Templates
 The theme includes all the templates that are used for a Help Center that has *all* the features available.
@@ -85,7 +85,7 @@ Learn more [here](https://support.zendesk.com/hc/en-us/articles/360001948367).
 ## Styles
 The styles that Theming Center needs to use in the theme are in the `style.css` file in the root folder.
 
-The styles for the theme are split using Sass partials, all the partials are under [styles/](/blob/master/styles/), they are all included in the "main" file [index.scss](/blob/master/styles/index.scss) and then compiled to CSS.
+The styles for the theme are split using Sass partials, all the partials are under [styles/](/styles/), they are all included in the "main" file [index.scss](/styles/index.scss) and then compiled to CSS.
 If you wish to use SASS you can go to the [using SASS section](#using-sass)
 
 ## Assets
