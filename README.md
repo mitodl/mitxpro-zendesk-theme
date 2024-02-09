@@ -112,6 +112,32 @@ Now you can compile your SASS files running:
 ```
 Which will take all the `scss` files inside the `styles/` folder and create the `style.css` file that is consumable by Zendesk Guide.
 
+
+# Quick Setup Recall (Running and testing theme locally)
+
+NOTE: This guide is to quickly setup and run the theme locally. To know more about how to customize the theme, See all the details above.
+
+1. Create a trial account on https://www.zendesk.com/. This will let you create a subdomin Zendesk account that you can manage.
+2. Make sure to opt-in for Guide integration once your trial account setup is done.
+3. Create API keys for running the server locally and previewing them on your subdomain. `<YOUR_ZENDESK_DOMAIN>/admin/apps-integrations/apis/zendesk-api/settings`.
+4. Enable Help Center for your account through `<YOUR_ZENDESK_DOMAIN>/hc/admin/general_settings`
+5. Install [ZAT](https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-zat/) Or [ZAT CLI](https://support.zendesk.com/hc/en-us/articles/4408822095642-Previewing-theme-changes-locally)
+6. Run `npm i` to install all the node packages
+7. Create a `.zat` file in your main directory. You can use `zat new` or create one manually. This file content would look like:
+```
+{
+  "subdomain": "<YOUR_SUB_DOMAIN>",
+  "username": "<USERNAME>/token",
+  "password": "<TOKEN_GENERATED_IN_STEP_3>",
+  "zat_latest": "3.9.2",
+  "zat_update_check": "2024-02-07"
+}
+```
+8. Compile the assets `./bin/compile.rb`
+9. Run the preview `zat theme preview`
+10. (Optional) to build a zip of local theme and upload on your trial instance run `zip -vr <ZIP_FILE_NAME>.zip <YOUR_THEME_DIRECTORY> -x "*/node_modules/*"` and then upload the generated zip file on `<YOUR_ZENDESK_DOMAIN>/theming/workbench`
+
+
 # Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/zendesk/copenhagen_theme
 Please mention @zendesk/guide-growth when creating a bug report or a pull request.
