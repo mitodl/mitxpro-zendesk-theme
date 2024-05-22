@@ -49,7 +49,7 @@ After you have customized your theme you can download the repository as a `zip` 
 
 You can follow the documentation for importing [here](https://support.zendesk.com/hc/en-us/articles/115012794168).
 
-You can also import directly from GitHub - learn more [here](https://support.zendesk.com/hc/en-us/community/posts/360004400007).
+You can also import directly from GitHub - learn more [here](https://support.zendesk.com/hc/en-us/articles/4408832476698).
 
 ## Templates
 The theme includes all the templates that are used for a Help Center that has *all* the features available.
@@ -85,7 +85,7 @@ Learn more [here](https://support.zendesk.com/hc/en-us/articles/360001948367).
 ## Styles
 The styles that Theming Center needs to use in the theme are in the `style.css` file in the root folder.
 
-The styles for the theme are split using Sass partials, all the partials are under [styles/](/blob/master/styles/), they are all included in the "main" file [index.scss](/blob/master/styles/index.scss) and then compiled to CSS.
+The styles for the theme are split using Sass partials, all the partials are under [styles/](/styles/), they are all included in the "main" file [index.scss](/styles/index.scss) and then compiled to CSS.
 If you wish to use SASS you can go to the [using SASS section](#using-sass)
 
 ## Assets
@@ -111,6 +111,33 @@ Now you can compile your SASS files running:
 ./bin/compile.rb
 ```
 Which will take all the `scss` files inside the `styles/` folder and create the `style.css` file that is consumable by Zendesk Guide.
+
+
+# Quick Setup Recall (Running and testing theme locally)
+
+NOTE: This guide is to quickly setup and run the theme locally. To know more about how to customize the theme, See all the details above.
+
+1. Create a trial account on https://www.zendesk.com/. This will let you create a subdomain Zendesk account that you can manage.
+2. Make sure to opt-in for Guide integration once your trial account setup is done.
+3. Create API keys for running the server locally and previewing them on your subdomain. `<YOUR_ZENDESK_DOMAIN>/admin/apps-integrations/apis/zendesk-api/settings`.
+4. Enable Help Center for your account through `<YOUR_ZENDESK_DOMAIN>/hc/admin/general_settings`
+5. Install [ZAT](https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-zat/) and [ZAT CLI](https://support.zendesk.com/hc/en-us/articles/4408822095642-Previewing-theme-changes-locally)
+6. Run `npm i` to install all the node packages
+7. Install sassc as mentioned in [Requirements sections](#requirements)
+8. Create a `.zat` file in your main directory. You can use `zat new` or create one manually. This file content would look like:
+```
+{
+  "subdomain": "<YOUR_SUB_DOMAIN>",
+  "username": "<USERNAME>/token",
+  "password": "<TOKEN_GENERATED_IN_STEP_3>",
+  "zat_latest": "3.9.2",
+  "zat_update_check": "2024-02-07"
+}
+```
+9. Compile the assets `./bin/compile.rb`
+10. Run the preview `zat theme preview`
+11. (Optional) to build a zip of local theme and upload on your trial instance run `zip -vr <ZIP_FILE_NAME>.zip <YOUR_THEME_DIRECTORY> -x "*/node_modules/*"` and then upload the generated zip file on `<YOUR_ZENDESK_DOMAIN>/theming/workbench`
+
 
 # Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/zendesk/copenhagen_theme
