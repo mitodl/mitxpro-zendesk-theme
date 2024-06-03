@@ -34,7 +34,7 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#355b6b"
+          "value": "rgba(4, 131, 188, 1)"
         },
         {
           "identifier": "article_link_color",
@@ -62,7 +62,7 @@
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "rgba(4, 131, 188, 1)"
         },
         {
           "identifier": "background_color",

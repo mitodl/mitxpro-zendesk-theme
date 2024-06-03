@@ -1650,15 +1650,15 @@ ul {
   padding: 30px 0;
 }
 .container .blocks-list li {
-  border-color: $link_color;
+  border-color: $brand_color;
 }
-.container .blocks-list li h4 {
-  color: $link_color;
+.container .blocks-list li .blocks-item-title {
+  color: $brand_color;
   font-size: 24px;
   line-height: 25px;
   font-weight: 600;
 }
-.container .blocks-list li p {
+.container .blocks-list li .blocks-item-description {
   color: black;
   font-size: 18px;
   line-height: 22px;
@@ -1667,10 +1667,10 @@ ul {
 .container .blocks-list li:hover {
   background: none;
 }
-.container .blocks-list li:hover a h4 {
-  color: $link_color;
+.container .blocks-list li:hover a .blocks-item-title {
+  color: $brand_color;
 }
-.container .blocks-list li:hover a p {
+.container .blocks-list li:hover a .blocks-item-description {
   color: black;
 }
 .container .blocks-list li .category-image {
@@ -3432,6 +3432,9 @@ ul {
   .collapsible-sidebar-body {
     display: block;
   }
+}
+.collapsible-sidebar-body .sidenav-item {
+  color: $text_color;
 }
 .collapsible-sidebar[aria-expanded=true] {
   max-height: none;
