@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#006b9c"
+          "value": "rgba(4, 131, 188, 1)"
         },
         {
           "identifier": "brand_text_color",
@@ -41,14 +41,14 @@
           "type": "color",
           "description": "article_link_color_description",
           "label": "article_link_color_label",
-          "value": "#1F73B7"
+          "value": "#0483BC"
         },
         {
           "identifier": "visited_article_link_color",
           "type": "color",
           "description": "visited_article_link_color_description",
           "label": "visited_article_link_color_label",
-          "value": "#A31F34"
+          "value": "#0483BC"
         },
         {
           "identifier": "hover_link_color",
