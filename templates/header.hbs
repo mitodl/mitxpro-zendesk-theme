@@ -18,13 +18,15 @@
       <ul class="user-nav-list">
 {{!--         <li>{{link 'community'}}</li> --}}
         <li>{{#link 'new_request' class='submit-a-request'}}Contact Us{{/link}}</li>
-        {{#unless signed_in}}
-          <li>
-            {{#link "sign_in" class="sign-in"}}
-              {{t 'sign_in'}}
-            {{/link}}
-          </li>
-        {{/unless}}
+        {{#if settings.show_user_info}}
+          {{#unless signed_in}}
+            <li>
+              {{#link "sign_in" class="sign-in"}}
+                {{t 'sign_in'}}
+              {{/link}}
+            </li>
+          {{/unless}}
+        {{/if}}
       </ul>
     </nav>
     {{#if signed_in}}
@@ -78,11 +80,13 @@
           <li class="item">{{change_password role="menuitem" class='change-password'}}</li>
           <li class="nav-divider"></li>
         {{else}}
-          <li class="item">
-            {{#link "sign_in" role="menuitem"}}
-              {{t 'sign_in'}}
-            {{/link}}
-          </li>
+          {{#if settings.show_user_info}}
+            <li class="item">
+              {{#link "sign_in" role="menuitem"}}
+                {{t 'sign_in'}}
+              {{/link}}
+            </li>
+          {{/if}}
           <li class="nav-divider"></li>
         {{/if}}
 {{!--         <li class="item">{{link 'community' role="menuitem"}}</li> --}}
