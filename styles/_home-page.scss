@@ -87,6 +87,8 @@
 
     li {
       border-color: $brand_color;
+      flex-direction: column;
+      justify-content: center;
 
       .blocks-item-title {
         color: $brand_color;
@@ -100,6 +102,13 @@
         font-size: 18px;
         line-height: 22px;
         font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .blocks-item-link:focus {
+        outline: 0;
+        box-shadow: none;
+        text-decoration: none;
       }
 
       &:hover {

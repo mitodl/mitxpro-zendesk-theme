@@ -1322,8 +1322,8 @@ ul {
   position: absolute;
   left: 15px;
   z-index: 1;
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   color: #777;
   pointer-events: none;
 }
@@ -1652,6 +1652,8 @@ ul {
 }
 .container .blocks-list li {
   border-color: $brand_color;
+  flex-direction: column;
+  justify-content: center;
 }
 .container .blocks-list li .blocks-item-title {
   color: $brand_color;
@@ -1664,6 +1666,12 @@ ul {
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
+  margin-top: 10px;
+}
+.container .blocks-list li .blocks-item-link:focus {
+  outline: 0;
+  box-shadow: none;
+  text-decoration: none;
 }
 .container .blocks-list li:hover {
   background: none;
