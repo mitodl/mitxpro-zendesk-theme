@@ -1019,6 +1019,9 @@ ul {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
 }
+.footer-language-selector {
+  height: 25px;
+}
 .footer-language-selector button {
   display: none;
   color: lighten($text_color, 20%);

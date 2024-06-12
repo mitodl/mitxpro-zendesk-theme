@@ -21,6 +21,10 @@
     padding-bottom: 20px !important;
   }
 
+  &-language-selector {
+    height: 25px;
+  }
+
   &-language-selector button {
     display: none;
     color: $secondary-text-color;
