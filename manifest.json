@@ -309,13 +309,6 @@
           "value": false
         },
         {
-          "identifier": "mit_link",
-          "type": "text",
-          "description": "mit_link_description",
-          "label": "mit_link_label",
-          "value": "https://mit.edu/"
-        },
-        {
           "identifier": "xpro_link",
           "type": "text",
           "description": "xpro_link_description",
