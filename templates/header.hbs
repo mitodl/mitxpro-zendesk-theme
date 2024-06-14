@@ -16,7 +16,8 @@
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
       <ul class="user-nav-list">
-{{!--         <li>{{link 'community'}}</li> --}}
+<!-- Hide community link from Zendesk theme as we don't have the community enabled -->
+<!--         <li>{{link 'community'}}</li> -->
         <li>{{#link 'new_request' class='submit-a-request'}}Contact Us{{/link}}</li>
         {{#if settings.show_user_info}}
           {{#unless signed_in}}
@@ -89,7 +90,8 @@
           {{/if}}
           <li class="nav-divider"></li>
         {{/if}}
-{{!--         <li class="item">{{link 'community' role="menuitem"}}</li> --}}
+<!-- Hide community link from Zendesk theme as we don't have the community enabled -->
+<!--         <li class="item">{{link 'community' role="menuitem"}}</li> -->
         <li class="item">{{#link 'new_request' role="menuitem" class='submit-a-request'}}Contact Us{{/link}}</li>
         <li class="nav-divider"></li>
         {{#if signed_in}}
